@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.lepet'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.postgresql', name: 'pgjdbc-aggregate', version: '42.2.8'
+    compile group: 'org.hibernate', name: 'hibernate-agroal', version: '5.4.2.Final'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
